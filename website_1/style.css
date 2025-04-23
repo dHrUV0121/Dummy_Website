@@ -11,6 +11,10 @@ body, html {
   width: 100%;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Header Styles */
 .header {
   position: relative;
@@ -37,28 +41,27 @@ nav {
   width: 100%;
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: left;
+  justify-content:space-between;
+  align-items: center;
 }
 
 /* Center Logo */
 .logo img {
-  align-items: center;
-  margin: 0 auto;
-  height: 40px;
-  margin: 0 auto;
-  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Navigation Links */
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 30px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 20px;
   top: 30px;
+}
+.nav-links li {
+  list-style: none;
 }
 
 .nav-links li a {
@@ -75,10 +78,9 @@ nav {
 
 /* Social Icons */
 .social-icons_1 {
-  position: absolute;
+  position:absolute;
   top: 25px;
   right: 50px;
-
   display: flex;             
   gap: 20px;                 
   align-items: center;
@@ -872,11 +874,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 100%;
-  position: absolute;
-  bottom: 1;
-  transform: translateY(100%); /* push them just under the contact-wrapper */
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .social-icons a {

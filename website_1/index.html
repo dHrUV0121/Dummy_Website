@@ -9,11 +9,11 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <nav>
       <div class="head">
         <!-- Logo in the center top -->
-        <a href="#home" class="logo">
+        <a href="#" class="logo" onclick="location.reload();">
           <img src="assets/logo.svg" alt="Figma Land Logo" />
         </a>
       </div>
@@ -23,23 +23,25 @@
       <!-- Navigation Links -->
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#features">Product</a></li>
+        <li><a href="#pricing-section">Pricing</a></li>
+        <li><a href="#partners">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <!-- Social Icons -->
       <div class="social-icons_1">
-        <img src="assets/twitter.png" alt="Twitter Icon">
-        <img src="assets/facebook.png" alt="Facebook Icon">
-        <img src="assets/linkedin.png" alt="LinkedIn Icon">
+        <a href="https://twitter.com"><img src="assets/white_twitter.png" alt="Twitter Icon"></a>
+        <a href="https://facebook.com"><img src="assets/white_facebook.png" alt="Facebook Icon"></a>
+        <a href="https://linkedin.com"><img src="assets/white_linkein.png" alt="LinkedIn Icon"></a>
       </div>
 
       <!-- Hero Section Content -->
       <div class="hero-text">
         <h1>The best products start with Figma</h1>
         <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
-        <button>Try For Free</button>
+        <a href="#pricing-section">
+          <button>Try For Free</button>
+        </a>
       </div>
 
     </div>
@@ -89,7 +91,9 @@
         <div class="text-content">
           <h2>Fastest way to organize</h2>
           <p>Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
-          <button>Try For Free</button>
+          <a href="#pricing-section">
+            <button>Try For Free</button>
+          </a>
         </div>
         <div class="image-container">
           <img src="assets/macbook.png" alt="Laptop Screenshot" />
@@ -147,7 +151,11 @@
         </div>
       </div>
 
-      <button class="cta">Try For Free</button>
+      <button class="cta" onclick="document.getElementById('pricing-section').scrollIntoView({ behavior: 'smooth' });">
+        Try For Free
+      </button>
+
+
     </section>
     <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
@@ -311,18 +319,13 @@
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
+          <div class="social-icons">
+            <a href="https://twitter.com"><img src="assets/twitter.png" alt="Twitter Icon"></a>
+            <a href="https://facebook.com"><img src="assets/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://linkedin.com"><img src="assets/linkedin.png" alt="LinkedIn Icon"></a>
+          </div>
         </div>
       </section>
-
-      </div>
-
-      </div>
-      <div class="social-icons">
-        <img src="assets/twitter.png" alt="Twitter Icon">
-        <img src="assets/facebook.png" alt="Facebook Icon">
-        <img src="assets/linkedin.png" alt="LinkedIn Icon">
-      </div>
-
     </section>
 
   </main>
@@ -372,9 +375,9 @@
           <span>(239) 555-0108</span>
         </div>
         <div class="footer-social">
-          <img src="assets/white_twitter.png" alt="Twitter" />
-          <img src="assets/white_facebook.png" alt="Facebook" />
-          <img src="assets/white_linkein.png" alt="LinkedIn" />
+          <a href="https://twitter.com"><img src="assets/white_twitter.png" alt="Twitter Icon"></a>
+          <a href="https://facebook.com"><img src="assets/white_facebook.png" alt="Facebook Icon"></a>
+          <a href="https://linkedin.com"><img src="assets/white_linkein.png" alt="LinkedIn Icon"></a>
         </div>
       </div>
     </div>
