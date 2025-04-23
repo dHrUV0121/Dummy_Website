@@ -572,15 +572,23 @@ nav {
 }
 
 .card {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 20px;
   background: white;
   color: #1f2535;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 40px 20px;
   width: 280px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card.highlight {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 80px;  /* increase top padding */
+  padding-bottom: 80px;
   background-color: #2389f3;
   color: white;
 }
@@ -694,6 +702,7 @@ nav {
   gap: 50px;
   padding: 40px 20px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .contact-left {
@@ -861,9 +870,13 @@ nav {
 }
 .social-icons {
   display: flex;
-  justify-content:flex-end; /* Aligns them under the map */
+  justify-content: center;
   gap: 16px;
-  max-width: 950px; /* match width of the map */
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+  transform: translateY(100%); /* push them just under the contact-wrapper */
+  margin-top: 40px;
 }
 
 .social-icons a {
